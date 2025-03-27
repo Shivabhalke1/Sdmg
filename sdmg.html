@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h5>designed BY shivbhalke for devika bhalke</h5>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Marry Me?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page" id="page1">
+        <h1>Will You Marry Me?</h1>
+        <p>You are the sunshine that lights up my darkest days. Life feels complete with you by my side.</p>
+        <button onclick="nextPage(2)">YES</button>
+        <button onclick="samepage(1)"> No</button>
+    </div>
+
+    <div class="page" id="page2" style="display:none;">
+        <h1>Because You Are My Everything</h1>
+        <p>In your eyes, I find my home. In your heart, I find my peace.</p>
+        <button onclick="nextPage(3)">Next</button>
+    </div>
+
+    <div class="page" id="page3" style="display:none;">
+        <h1>Every Moment with You is Special</h1>
+        <p>With you, even the simplest moments become precious memories.</p>
+        <button onclick="nextPage(4)">Next</button>
+    </div>
+
+    <div class="page" id="page4" style="display:none;">
+        <h1>Together Forever</h1>
+        <p>I promise to hold your hand through every high and low.</p>
+        <button onclick="nextPage(5)">Next</button>
+    </div>
+
+    <div class="page" id="page5" style="display:none;">
+        <h1>So, Will You Marry Me?</h1>
+        <p>You and me, forever and always. Let's write our beautiful story together.</p>
+        <button onclick="nextPage(6)">YES BABY</button>
+       
+    </div>
+
+    <script>
+        function nextPage(pageNumber) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.style.display = 'none');
+            document.getElementById('page' + pageNumber).style.display = 'block';
+        }
+    </script>
+</body>
+<div class="page" id="page6" style="display:none;">
+<div class="card">
+    <div class="card-details">
+      <p class="text-title">THANKU BABY LOVE U </p>
+      <p class="text-body">"In you, I’ve found the love of my life and my closest, truest friend."
+
+        "Every love story is beautiful, but ours will always be my favorite."</p>
+    </div>
+    <button class="card-button">More info</button>
+  </div>
+</html>
+<link rel="stylesheet" href="card.css">
+<link rel="stylesheet" href="mgds.css">
